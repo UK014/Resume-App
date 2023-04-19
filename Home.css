@@ -1,0 +1,117 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+#bodypart {
+    height: 2200px;
+    background-color: #474e5d;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#resume {
+    margin-top: 80px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 30px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    font-size: 25px;
+    cursor: pointer;
+    width: 400px;
+}
+
+.blink {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+#start {
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 20px;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-bottom: 20px;
+    text-align: center;
+    border: solid;
+    border-color: white;
+    box-shadow: 5px 5px 5px black;
+    background-color: #f7f7f7;
+    height: 350px;
+    width: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+#cv {
+    margin-top: 150px;
+    margin-left: 500px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    text-align: justify;
+    border: solid;
+    border-color: white;
+    box-shadow: 5px 5px 5px black;
+    background-color: #f7f7f7;
+    height: auto;
+    width: 850px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+#cv2 {
+    margin-top: 15px;
+    margin-left: 500px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    text-align: justify;
+    border: solid;
+    border-color: white;
+    box-shadow: 5px 5px 5px black;
+    background-color: #f7f7f7;
+    height: auto;
+    width: 850px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    position: relative;
+}
+
+.ttt {
+    text-align: center;
+}
+
+
+#iku {
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 50px;
+    padding-top: 30px;
+}

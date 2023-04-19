@@ -1,0 +1,187 @@
+﻿body {
+    background-color: #474e5d;
+}
+.left {
+    margin-left: 230px;
+    padding: 8px 16px;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+    outline: 0
+}
+
+.Experience {
+    padding: 8px 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+    width: 800px;
+    text-size-adjust: 100%;
+    margin-left:800px;
+    position:absolute;
+    top:174px;
+}
+.form1{
+    width:auto;
+    height:auto;
+}
+.Education {
+    padding: 8px 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+    width: 800px;
+    text-size-adjust: 100%;
+    margin-left:800px;
+    position:absolute;
+    top:912px;
+    
+}
+
+.endlabel {
+    margin-left: 70px;
+}
+
+.container {
+    padding: 10px;
+}
+
+.header {
+    padding-bottom: 20px;
+}
+#mid {
+    padding-top: 20px;
+    height: 1600px;
+    background-color: #474e5d;
+}
+
+#Description1 {
+    resize: none;
+    
+}
+#enddate{
+    padding-left:60px;
+}
+#companylabel {
+    padding-left: 110px;
+}
+#degreelabel{
+    padding-left:100px;
+}
+#Description2 {
+    resize: none;
+    
+}
+
+    #createbtn:hover {
+        background-color: #555;
+    }
+#createbtn {
+    position: absolute;
+    top: 1650px;
+    left: 800px;
+    width: 300px;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+#skillsbtn {
+    width:100%;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+#skillsbtn:hover {
+    background-color: #555;
+}
+#languagebtn {
+    width: 100%;
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+}
+
+    #languagebtn:hover {
+        background-color: #555;
+    }
+.blink {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: .5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+#masterdiv{
+    visibility:hidden;
+}
+#PhDdiv {
+    visibility: hidden;
+}
+#jobexperience2 {
+    visibility:hidden;
+}
+#phdhr{
+    visibility:hidden;
+}
+img {
+    height: 150px;
+    width: 150px;
+}
+.txt {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+#fieldset1 {
+    border: 2px solid;
+    border-color: black;
+    height:auto;
+}
+.myhr {
+    height: 2px;
+    background-color: black;
+}
+.inputs {
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    border-radius: 0px;
+    background-color: #f7f7f7;
+}
+#photoupload {
+    margin-left: 230px;
+    padding: 8px 16px;
+    float: left;
+    width: 300px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: #f7f7f7;
+    outline: 0
+}

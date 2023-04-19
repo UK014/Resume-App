@@ -1,0 +1,215 @@
+﻿body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    color: white;
+}
+
+#divv {
+    height: 700px;
+}
+
+
+body {
+    background-color: #474e5d;
+}
+
+#line {
+    height: 1px;
+    width: 100%;
+    background-color: #AFC1D0;
+}
+
+#contactform {
+    text-align: center;
+    border: solid;
+    border-color: white;
+    box-shadow: 5px 5px 5px black;
+    background-color: white;
+    height: 400px;
+    width: 700px;
+}
+
+#cntc {
+    float: left;
+    width: 50%;
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}
+
+#right {
+    float: left;
+    width: 50%;
+}
+
+.location {
+    position: absolute;
+    right: 40%;
+    top: 350px;
+}
+
+#loc {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-left: 65%;
+    top: 350px;
+}
+
+.telephone {
+    position: absolute;
+    right: 40.1%;
+    top: 455px;
+}
+
+#phone {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-left: 65%;
+    top: 450px;
+}
+
+.envelope {
+    position: absolute;
+    right: 40%;
+    top: 550px;
+}
+
+#mail {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-left: 65%;
+    top: 540px;
+}
+
+.mail {
+    color: white;
+}
+
+#line2 {
+    position: absolute;
+    margin-left: 58%;
+    top: 690px;
+    height: 2px;
+    width: 650px;
+    background-color: #AFC1D0;
+}
+
+#img1 {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin-left: 68%;
+    top: 710px;
+}
+
+#img2 {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin-left: 73%;
+    top: 710px;
+}
+
+#img3 {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin-left: 78%;
+    top: 710px;
+}
+
+#img4 {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    margin-left: 83%;
+    top: 710px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+.vertical-center {
+    margin-top: 50px;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+#tbl {
+    margin-top: 75px;
+}
+
+#name {
+    width: 225px;
+    padding-left: 10px;
+}
+
+#msg {
+    padding-left: 20px;
+}
+
+#surname {
+    width: 225px;
+}
+
+#email1 {
+    padding-left: 10px;
+    width: 225px;
+}
+
+#subject {
+    width: 225px;
+}
+
+#message {
+    position: relative;
+    left: 10px;
+    height: 150px;
+    width: 620px;
+}
+
+#submitBtn {
+    width: 100px;
+    position: relative;
+    left: 0px;
+}
+
+#secondform {
+    width: 50vw;
+}
+
+.clear {
+    clear: both;
+}
+
+
+#mailp {
+    position: absolute;
+    right: 39.9%;
+    top: 550px;
+    width: 35px;
+    height: 35px;
+}

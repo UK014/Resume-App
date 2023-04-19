@@ -1,0 +1,193 @@
+﻿
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="~/Content/Resume.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
+</head>
+
+
+<body>
+    <script src="~/Scripts/Pdf.js"></script>
+    <script src="~/Scripts/Resume.js"></script>
+    
+    <div id="mid">
+        <div class="left">
+            <form action="" method="post" enctype="multipart/form-data">
+                <fieldset id="fieldset1">
+                    @using (Html.BeginForm("Resume", "MIU", FormMethod.Post, new {@class = "form1", enctype = "multipart/form-data" }))
+                    {
+                        <legend> Upload Image </legend>
+                        <input type="file" name="postedFile" />
+                        <hr class="myhr" />
+                        <input type="submit" value="Upload" />
+                        <br />
+                        <br />
+                        if (ViewBag.ImageUrl != null)
+                        {
+                            <img id="photo" src="~/Uploads/@ViewBag.ImageUrl" />
+                        }
+                    }
+                </fieldset>
+            </form>
+        </div>
+
+
+        
+        <div class="left">
+            @using (Html.BeginForm("Save", "MIU", FormMethod.Post, new { @class = "form1" }))
+            {
+                <h2>Personal Information</h2>
+
+                <p class="txt">Name:<br /><input type="text" id="name" class="inputs" name="Name" /></p>
+                <p class="txt">Surname:<br /><input type="text" id="surname" class="inputs" name="Surname" /></p>
+                <p class="txt">E-mail:<br /><input type="text" id="email" class="inputs" name="Email" /></p>
+                <p class="txt">Phone Number:<br /><input type="text" id="phone" class="inputs" name="Phone" /></p>
+
+                <hr class="myhr" />
+                <button id="createbtn" class="blink" onclick="generate()">Create PDF</button>}
+        <div>
+            <p class="txt">Skills:<br /><input type="text" id="Skills" name="Skills" class="inputs" /></p>
+
+            <button onclick="addskills()" id="skillsbtn">Add a new skill</button><br><br>
+            <ul id="skillslist"></ul>
+        </div>
+        <div>
+            <p class="txt">Languages:<br /><input type="text" id="Language" name="Language" class="inputs" /></p>
+
+            <button onclick="addlanguages()" id="languagebtn">Add a new language</button><br><br>
+            <ul id="languagelist"></ul>
+        </div>
+
+        </div>
+        
+
+
+            <div class="right">
+                <div class="Experience">
+                    <div class="container">
+                        <h2 class="header">Work Experience</h2>
+                        <select class="inputs" id="workexperience" onchange="experience()">
+                            <option>-- Add The Job --</option>
+                            <option value="jobone">1</option>
+                            <option value="jobtwo">2</option>
+                        </select><br><br>
+                        <label class="txt">Job Title</label>
+                        <label class="txt" id="companylabel">Company</label>
+                        <br /><br />
+                        <label>
+                            Title:
+                            <input type="text" id="Title" name="Title" class="inputs" />
+                        </label>
+
+                        <label>
+                            Company:
+                            <input type="text" id="Company" name="Company" class="inputs" />
+                        </label>
+
+                        <br><br />
+                        <label class="txt">Start Date</label>
+                        <label class="txt" id="enddate"> End Date</label>
+                        <br /><br />
+                        <label><input type="month" id="EXSDate" class="inputs"></label>
+                        <label><input type="month" id="EXEDate" class="inputs"></label>
+                        <p><textarea id="Description1" class="inputs" rows="6" cols="50"></textarea></p>
+
+                        <div id="jobexperience2">
+                            <label class="txt">Job Title</label>
+                            <label class="txt" id="companylabel">Company</label>
+                            <br /><br />
+                            <label><input type="text" id="SecondTitle" name="SecondTitle" class="inputs" /></label>
+                            <label><input type="text" id="SecondCompany" name="SecondCompany" class="inputs" /></label>
+
+                            <br><br />
+                            <label class="txt">Start Date</label>
+                            <label class="txt" id="enddate"> End Date</label>
+                            <br /><br />
+                            <label><input type="text" id="SecondTitle" name="SecondTitle" class="inputs" /></label>
+                            <label><input type="text" id="SecondCompany" name="SecondCompany" class="inputs" /></label>
+                            <label><input type="month" id="SecondEXSDate" name="SecondEXSDate" class="inputs" /></label>
+                            <label><input type="month" id="SecondEXEDate" name="SecondEXEDate" class="inputs" /></label>
+                            <p><textarea id="Description2" name="Description2" class="inputs" rows="6" cols="50"></textarea></p>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="Education">
+                    <div class="container">
+                        <h2 class="header">Education</h2>
+                        <select class="inputs" id="Degree" onchange="Degree()">
+                            <option>-- Degree --</option>
+                            <option value="Bachelor">Bachelor</option>
+                            <option value="Master">Master</option>
+                            <option value="Ph.D">Ph.D</option>
+                        </select><br><br>
+                        <label class="txt">University</label>
+                        <label class="txt" id="degreelabel">Degree</label>
+                        <br /><br />
+                        <label>
+                            <input type="text" id="BachelorUniversity" name="BachelorUniversity" class="inputs" />
+                        </label>
+                        <label>
+                            <input type="text" id="BachelorDegree" name="BachelorDegree" class="inputs" />
+                        </label>
+
+                        <br><br>
+                        <label class="txt">Start Date</label>
+                        <label class="txt" id="enddate"> End Date</label>
+                        <br /><br />
+                        <label><input type="text" id="BachelorUniversity" name="BachelorUniversity" class="inputs" /></label>
+                        <label><input type="text" id="BachelorDegree" name="BachelorDegree" class="inputs" /></label>
+                        <label><input type="month" id="BEDSDate" name="BEDSDate" class="inputs" /></label>
+                        <label><input type="month" id="BEDEDate" name="BEDEDate" class="inputs" /></label>
+
+                        <br><br>
+                        <hr class="myhr">
+                        <div id="masterdiv">
+                            <label class="txt">University</label>
+                            <label class="txt" id="degreelabel">Degree</label>
+                            <br /><br />
+                            <label>Master University:<br /><input type="text" id="MasterUniversity" name="MasterUniversity" class="inputs" /></label>
+                            <label>Master Degree:<br /><input type="text" id="MasterDegree" name="MasterDegree" class="inputs" /></label>
+
+                            <br><br>
+                            <label class="txt">Start Date</label>
+                            <label class="txt" id="enddate"> End Date</label>
+                            <br /><br />
+                            <label><input type="text" id="MasterUniversity" name="MasterUniversity" class="inputs" /></label>
+                            <label><input type="text" id="MasterDegree" name="MasterDegree" class="inputs" /></label>
+                            <label><input type="month" id="MEDSDate" name="MEDSDate" class="inputs" /></label>
+                            <label><input type="month" id="MEDEDate" name="MEDEDate" class="inputs" /></label>
+
+                            <br><br>
+                        </div>
+                        <hr class="myhr" id="phdhr">
+                        <div id="PhDdiv">
+                            <label class="txt">University</label>
+                            <label class="txt" id="degreelabel">Degree</label>
+                            <br /><br />
+                            <label><input type="text" id="PhDUniversity" name="PhDUniversity" class="inputs"></label>
+                            <label><input type="text" id="PhDDegree" name="PhDDegree" class="inputs"></label>
+
+
+
+                            <br><br>
+                            <label class="txt">Start Date</label>
+                            <label class="txt" id="enddate"> End Date</label>
+                            <br /><br />
+                            <label><input type="month" id="PEDSDate" name="PEDSDate" class="inputs" value="YYYY-MM"></label>
+                            <label><input type="month" id="PEDEDate" name="PEDEDate" class="inputs" value="YYYY-MM"></label>
+                        </div>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+</body>
+</html>

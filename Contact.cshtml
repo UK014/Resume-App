@@ -1,0 +1,88 @@
+﻿
+<html>
+<head>
+    <title> MIU Resume Builder | Contact </title>
+    <link rel="stylesheet" href="~/Content/Contact.css">
+
+</head>
+
+
+<body>
+    <div id="divv">
+        <h1 class="header">Contact Us</h1>
+        <div id="line"></div>
+        <h1 class="header">We would love to help!</h1>
+
+        <div id="cntc">
+            <form id="contactform" class="vertical-center">
+                <table id="tbl">
+                    <tbody>
+                        <tr>
+                            <table id="tbl2" class="center">
+                                <tr>
+                                    <td>Name:</td>
+                                    <td><input type="text" id="name"></td>
+                                    <td>Surname:</td>
+                                    <td><input type="text" id="surname"></td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td><input type="text" id="email1"></td>
+                                    <td>Subject:</td>
+                                    <td><input type="text" id="subject"> </td>
+                                </tr>
+                                <tr>
+                                    <td id="msg">Message:</td>
+                                </tr>
+                            </table>
+                            <table class="center">
+                                <tr>
+                                    <td><textarea type="text" id="message"></textarea> </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <button class="button" onclick="contact()" type="submit" id="submitBtn" name="submit" value="Submit">Submit</button>
+                                    </td>
+                                </tr>
+                            </table>
+
+                    </tbody>
+                </table>
+
+            </form>
+        </div>
+
+        <div id="right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="location" viewBox="0 0 16 16">
+                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+            </svg>
+
+            <a target="_blank" href=https://g.page/istanbulkulturuniversitesi?share><p id="loc">Ataköy 7-8-9-10, E5 Karayolu Üzeri Ataköy Yerleşkesi, 34158 Bakırköy</p></a>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="telephone" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+            </svg>
+            <a href="tel:02124984141"><p id="phone"> 0212-498-41-41</p></a>
+            <img id="mailp" src="~/Assets/email.png">
+            <p id="mail">
+                <a class="mail" href="mailto:mertarslang@gmail.com"> mertarslang@gmail.com</a><br><br>
+                <a class="mail" href="mailto:ilaydayk@gmail.com"> ilaydayk@gmail.com</a><br><br>
+                <a class="mail" href="mailto:umutkeskin@gmail.com"> umutkeskin@gmail.com</a>
+            </p>
+            <a target="_blank" href="https://www.facebook.com"><img id="img1" class="image" src="~/Assets/facebook.png"></a>
+            <a target="_blank" href="https://www.linkedin.com"><img id="img2" class="image" src="~/Assets/linkedin.png"></a>
+            <a target="_blank" href="https://www.instagram.com"><img id="img3" class="image" src="~/Assets/insta.png"></a>
+            <a target="_blank" href="https://www.twitter.com"><img id="img4" class="image" src="~/Assets/twitter.png"></a>
+        </div>
+        <div id="line2"></div>
+
+        <div class="clear"></div>
+
+
+
+
+    </div>
+
+    <script src="~/Scripts/Contact.js"></script>
+</body>
+
+</html>

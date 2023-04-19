@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MIU Resume Builder</title>
+    <link rel="Stylesheet" type="text/css" href="~/Content/Layout.css">
+</head>
+<body>
+    <div id="top">
+        <img id="logo" src="~/Assets/MIU3.png" alt="logo">
+        <div class="topnav">
+
+            @Html.ActionLink("Home", "Home", "MIU")
+            @Html.ActionLink("About", "About", "MIU")
+            @Html.ActionLink("Contact", "Contact", "MIU")
+            @Html.ActionLink("FAQ","FAQ","MIU")
+            
+        </div>
+
+    </div>
+    @RenderBody()
+    
+
+    <div id="footer"><a id="iku" href="https://www.iku.edu.tr">İstanbul Kültür Üniversitesi</a></div>
+
+    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="~/Scripts/bootstrap.min.js"></script>
+</body>
+</html>
